@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .item1 {
+            color:red;
+            font-size:18px;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            console.log('123');
+            var str = 'av3567gd5dg7'
+            var re = /[0-9]{2}|[a-z]{1}/gi;
+            console.log(re.test(str));
+            console.log(str.match(re));
+
+        }
+    </script>
 </head>
 <body>
-
-    <div>item1</div>
+    <div class="item1">item1</div>
     <div>item2</div>
     <div>item3</div>
     <div>item4</div>
